@@ -1,0 +1,609 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /home/nicky
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 80
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 24
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 2207
+    content: "\e[?2004h\e]0;root@nicky-X441BA: /home/nicky\aroot@nicky-X441BA:/home/nicky# "
+  - delay: 2445
+    content: m
+  - delay: 321
+    content: a
+  - delay: 385
+    content: r
+  - delay: 1010
+    content: i
+  - delay: 177
+    content: a
+  - delay: 593
+    content: d
+  - delay: 832
+    content: b
+  - delay: 1104
+    content: "\r\n\e[?2004l\r"
+  - delay: 118
+    content: "\e(B\e[0;1mWelcome to the MariaDB monitor.  Commands end with ; or \\g.\r\n\e(B\e[m\e(B\e[0;1mYour MariaDB connection id is 7\r\nServer version: 11.4.9-MariaDB-ubu2404 mariadb.org binary distribution\r\n\r\n\e(B\e[m\e(B\e[0;1mCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\r\n\r\n\e(B\e[m\e(B\e[0;1mType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\r\n\r\n\e(B\e[mMariaDB [(none)]> "
+  - delay: 156147
+    content: c
+  - delay: 427
+    content: r
+  - delay: 420
+    content: e
+  - delay: 818
+    content: a
+  - delay: 285
+    content: t
+  - delay: 235
+    content: e
+  - delay: 203
+    content: ' '
+  - delay: 145
+    content: d
+  - delay: 342
+    content: a
+  - delay: 217
+    content: t
+  - delay: 76
+    content: a
+  - delay: 845
+    content: b
+  - delay: 145
+    content: a
+  - delay: 142
+    content: s
+  - delay: 288
+    content: e
+  - delay: 293
+    content: ' '
+  - delay: 33353
+    content: u
+  - delay: 964
+    content: a
+  - delay: 206
+    content: s
+  - delay: 463
+    content: '2'
+  - delay: 1668
+    content: ;
+  - delay: 528
+    content: "\r\n"
+  - delay: 197
+    content: "\e(B\e[0;1mQuery OK, 1 row affected (0,195 sec)\r\n\e(B\e[m\e(B\e[0;1m\r\n\e(B\e[mMariaDB [(none)]> "
+  - delay: 17111
+    content: u
+  - delay: 310
+    content: s
+  - delay: 364
+    content: e
+  - delay: 1119
+    content: ' '
+  - delay: 336
+    content: u
+  - delay: 207
+    content: a
+  - delay: 146
+    content: s
+  - delay: 498
+    content: '2'
+  - delay: 1467
+    content: ;
+  - delay: 1627
+    content: "\r\n"
+  - delay: 138
+    content: "\e(B\e[0;1mDatabase changed\r\n\e(B\e[mMariaDB [uas2]> "
+  - delay: 52547
+    content: "CREATE TABLE member_pelanggan (\r\n    ->     id_member INT AUTO_INCREMENT PRIMARY KEY,\r\n    ->     nama VARCHAR(100) NOT NULL,\r\n    ->     alamat TEXT,\r\n    ->     no_hp VARCHAR(20),\r\n    ->     tanggal_daftar DATE\r\n    -> );\r\n"
+  - delay: 103
+    content: "\e(B\e[0;1mQuery OK, 0 rows affected (0,105 sec)\r\n\e(B\e[m\e(B\e[0;1m\r\n\e(B\e[mMariaDB [uas2]> "
+  - delay: 20831
+    content: "INSERT INTO member_pelanggan\r\n    -> (nama, alamat, no_hp, tanggal_daftar)\r\n    -> VALUES\r\n    -> ('Andi Saputra', 'Bandung', '08123456789', '2026-01-06');\r\n"
+  - delay: 22
+    content: "\e(B\e[0;1mQuery OK, 1 row affected (0,023 sec)\r\n\e(B\e[m\e(B\e[0;1m\r\n\e(B\e[mMariaDB [uas2]> "
+  - delay: 95696
+    content: i
+  - delay: 980
+    content: 'n'
+  - delay: 165
+    content: s
+  - delay: 282
+    content: e
+  - delay: 234
+    content: r
+  - delay: 149
+    content: t
+  - delay: 423
+    content: ' '
+  - delay: 998
+    content: i
+  - delay: 372
+    content: 'n'
+  - delay: 394
+    content: t
+  - delay: 2149
+    content: o
+  - delay: 381
+    content: ' '
+  - delay: 645
+    content: m
+  - delay: 155
+    content: e
+  - delay: 235
+    content: m
+  - delay: 773
+    content: b
+  - delay: 168
+    content: e
+  - delay: 197
+    content: r
+  - delay: 2463
+    content: _
+  - delay: 2567
+    content: p
+  - delay: 202
+    content: e
+  - delay: 178
+    content: l
+  - delay: 276
+    content: a
+  - delay: 181
+    content: 'n'
+  - delay: 266
+    content: g
+  - delay: 212
+    content: g
+  - delay: 117
+    content: a
+  - delay: 1593
+    content: 'n'
+  - delay: 273
+    content: ' '
+  - delay: 1995
+    content: (
+  - delay: 1276
+    content: "\r\n    -> "
+  - delay: 898
+    content: i
+  - delay: 239
+    content: d
+  - delay: 2119
+    content: _
+  - delay: 390
+    content: m
+  - delay: 182
+    content: e
+  - delay: 118
+    content: m
+  - delay: 350
+    content: b
+  - delay: 158
+    content: e
+  - delay: 224
+    content: r
+  - delay: 2248
+    content: ' '
+  - delay: 462
+    content: i
+  - delay: 237
+    content: 'n'
+  - delay: 262
+    content: t
+  - delay: 305
+    content: ' '
+  - delay: 144
+    content: a
+  - delay: 182
+    content: u
+  - delay: 373
+    content: t
+  - delay: 197
+    content: o
+  - delay: 300
+    content: ' '
+  - delay: 255
+    content: i
+  - delay: 295
+    content: 'n'
+  - delay: 333
+    content: c
+  - delay: 290
+    content: r
+  - delay: 269
+    content: e
+  - delay: 1330
+    content: "\r\e[31G\e[K"
+  - delay: 191
+    content: "\r\e[30G\e[K"
+  - delay: 169
+    content: "\r\e[29G\e[K"
+  - delay: 152
+    content: "\r\e[28G\e[K"
+  - delay: 154
+    content: "\r\e[27G\e[K"
+  - delay: 168
+    content: "\r\e[26G"
+  - delay: 1337
+    content: _
+  - delay: 775
+    content: i
+  - delay: 281
+    content: 'n'
+  - delay: 145
+    content: c
+  - delay: 290
+    content: r
+  - delay: 274
+    content: e
+  - delay: 189
+    content: m
+  - delay: 75
+    content: e
+  - delay: 181
+    content: 'n'
+  - delay: 706
+    content: t
+  - delay: 1924
+    content: ' '
+  - delay: 370
+    content: p
+  - delay: 253
+    content: r
+  - delay: 217
+    content: i
+  - delay: 291
+    content: m
+  - delay: 111
+    content: a
+  - delay: 391
+    content: r
+  - delay: 211
+    content: 'y'
+  - delay: 300
+    content: ' '
+  - delay: 478
+    content: k
+  - delay: 202
+    content: w
+  - delay: 907
+    content: "\r\e[46G\e[K"
+  - delay: 252
+    content: e
+  - delay: 439
+    content: 'y'
+  - delay: 7200
+    content: "\r\e[47G\e[K"
+  - delay: 499
+    content: "\r\e[46G\e[K"
+  - delay: 31
+    content: "\r\e[45G\e[K"
+  - delay: 29
+    content: "\r\e[44G"
+  - delay: 34
+    content: "\r\e[43G\e[K"
+  - delay: 29
+    content: "\r\e[42G\e[K"
+  - delay: 31
+    content: "\r\e[41G\e[K"
+  - delay: 30
+    content: "\r\e[40G\e[K"
+  - delay: 31
+    content: "\r\e[39G\e[K"
+  - delay: 31
+    content: "\r\e[38G\e[K"
+  - delay: 29
+    content: "\r\e[37G\e[K"
+  - delay: 32
+    content: "\r\e[36G"
+  - delay: 32
+    content: "\r\e[35G\e[K"
+  - delay: 30
+    content: "\r\e[34G\e[K"
+  - delay: 31
+    content: "\r\e[33G\e[K"
+  - delay: 30
+    content: "\r\e[32G\e[K"
+  - delay: 30
+    content: "\r\e[31G\e[K"
+  - delay: 32
+    content: "\r\e[30G\e[K"
+  - delay: 163
+    content: "\r\e[29G\e[K"
+  - delay: 500
+    content: "\r\e[28G\e[K"
+  - delay: 31
+    content: "\r\e[27G\e[K"
+  - delay: 31
+    content: "\r\e[26G\e[K"
+  - delay: 31
+    content: "\r\e[25G\e[K"
+  - delay: 30
+    content: "\r\e[24G\e[K"
+  - delay: 30
+    content: "\r\e[23G\e[K"
+  - delay: 30
+    content: "\r\e[22G\e[K"
+  - delay: 30
+    content: "\r\e[21G"
+  - delay: 31
+    content: "\r\e[20G\e[K"
+  - delay: 30
+    content: "\r\e[19G\e[K"
+  - delay: 32
+    content: "\r\e[18G\e[K"
+  - delay: 31
+    content: "\r\e[17G"
+  - delay: 29
+    content: "\r\e[16G\e[K"
+  - delay: 29
+    content: "\r\e[15G\e[K"
+  - delay: 32
+    content: "\r\e[14G\e[K"
+  - delay: 295
+    content: "\r\e[13G\e[K"
+  - delay: 216
+    content: "\r\e[12G\e[K"
+  - delay: 313
+    content: "\r\e[11G\e[K"
+  - delay: 197
+    content: "\r\e[10G\e[K"
+  - delay: 167
+    content: "\r\e[9G\e[K"
+  - delay: 175
+    content: "\r\e[8G\e[K"
+  - delay: 3278
+    content: \
+  - delay: 1099
+    content: c
+  - delay: 1057
+    content: "\r\nMariaDB [uas2]> "
+  - delay: 30388
+    content: "INSERT INTO member_pelanggan (nama, alamat, no_hp, tanggal_dafta \br)\r\n    -> VALUES\r\n    -> ('Budi Santoso', 'Jakarta', '08234567890', '2026-01-06'),\r\n    -> ('Citra Lestari', 'Surabaya', '08345678901', '2026-01-06'),\r\n    -> ('Dewi Anggraini', 'Bandung', '08129876543', '2026-01-06');\r\n"
+  - delay: 6
+    content: "\e(B\e[0;1mQuery OK, 3 rows affected (0,005 sec)\r\n\e(B\e[m\e(B\e[0;1mRecords: 3  Duplicates: 0  Warnings: 0\r\n\e(B\e[m\e(B\e[0;1m\r\n\e(B\e[mMariaDB [uas2]> "
+  - delay: 10107
+    content: s
+  - delay: 292
+    content: e
+  - delay: 343
+    content: l
+  - delay: 123
+    content: e
+  - delay: 283
+    content: c
+  - delay: 1075
+    content: t
+  - delay: 1653
+    content: '*'
+  - delay: 916
+    content: "\r\e[23G\e[K"
+  - delay: 451
+    content: ' '
+  - delay: 397
+    content: '*'
+  - delay: 446
+    content: ' '
+  - delay: 340
+    content: f
+  - delay: 271
+    content: r
+  - delay: 262
+    content: o
+  - delay: 295
+    content: m
+  - delay: 272
+    content: ' '
+  - delay: 1492
+    content: m
+  - delay: 175
+    content: e
+  - delay: 139
+    content: m
+  - delay: 267
+    content: b
+  - delay: 145
+    content: e
+  - delay: 159
+    content: r
+  - delay: 1054
+    content: _
+  - delay: 462
+    content: p
+  - delay: 302
+    content: e
+  - delay: 347
+    content: l
+  - delay: 436
+    content: a
+  - delay: 747
+    content: 'n'
+  - delay: 253
+    content: g
+  - delay: 151
+    content: g
+  - delay: 164
+    content: a
+  - delay: 496
+    content: 'n'
+  - delay: 1249
+    content: ;
+  - delay: 1085
+    content: "\r\n+-----------+----------------+----------+-------------+----------------+\r\n| id_member | nama           | alamat   | no_hp       | tanggal_daftar |\r\n+-----------+----------------+----------+-------------+----------------+\r\n|         1 | Andi Saputra   | Bandung  | 08123456789 | 2026-01-06     |\r\n|         2 | Budi Santoso   | Jakarta  | 08234567890 | 2026-01-06     |\r\n|         3 | Citra Lestari  | Surabaya | 08345678901 | 2026-01-06     |\r\n|         4 | Dewi Anggraini | Bandung  | 08129876543 | 2026-01-06     |\r\n+-----------+----------------+----------+-------------+----------------+\r\n\e(B\e[0;1m4 rows in set (0,001 sec)\r\n\e(B\e[m\e(B\e[0;1m\r\n\e(B\e[mMariaDB [uas2]> "
+  - delay: 89440
+    content: "INSERT INTO member_pelanggan (nama, alamat, no_hp, tanggal_dafta \br)\r\n    -> VALUES\r\n    -> ('Rina Kurniawati', 'Yogyakarta', '08567890123', '2026-01-06');\r\n\e(B\e[0;1mQuery OK, 1 row affected (0,004 sec)\r\n\e(B\e[m\e(B\e[0;1m\r\n\e(B\e[mMariaDB [uas2]> "
+  - delay: 1645
+    content: s
+  - delay: 377
+    content: e
+  - delay: 295
+    content: l
+  - delay: 64
+    content: e
+  - delay: 332
+    content: c
+  - delay: 304
+    content: t
+  - delay: 859
+    content: ' '
+  - delay: 2748
+    content: '*'
+  - delay: 492
+    content: ' '
+  - delay: 355
+    content: f
+  - delay: 318
+    content: r
+  - delay: 370
+    content: o
+  - delay: 471
+    content: m
+  - delay: 411
+    content: ' '
+  - delay: 3986
+    content: m
+  - delay: 238
+    content: e
+  - delay: 144
+    content: m
+  - delay: 328
+    content: b
+  - delay: 163
+    content: e
+  - delay: 154
+    content: r
+  - delay: 1202
+    content: _
+  - delay: 2622
+    content: p
+  - delay: 198
+    content: e
+  - delay: 158
+    content: l
+  - delay: 663
+    content: a
+  - delay: 313
+    content: 'n'
+  - delay: 261
+    content: g
+  - delay: 173
+    content: g
+  - delay: 150
+    content: a
+  - delay: 588
+    content: 'n'
+  - delay: 839
+    content: ;
+  - delay: 4283
+    content: "\r\n+-----------+-----------------+------------+-------------+----------------+\r\n| id_member | nama            | alamat     | no_hp       | tanggal_daftar |\r\n+-----------+-----------------+------------+-------------+----------------+\r\n|         1 | Andi Saputra    | Bandung    | 08123456789 | 2026-01-06     |\r\n|         2 | Budi Santoso    | Jakarta    | 08234567890 | 2026-01-06     |\r\n|         3 | Citra Lestari   | Surabaya   | 08345678901 | 2026-01-06     |\r\n|         4 | Dewi Anggraini  | Bandung    | 08129876543 | 2026-01-06     |\r\n|         5 | Rina Kurniawati | Yogyakarta | 08567890123 | 2026-01-06     |\r\n+-----------+-----------------+------------+-------------+----------------+\r\n\e(B\e[0;1m5 rows in set (0,001 sec)\r\n\e(B\e[m\e(B\e[0;1m\r\n\e(B\e[mMariaDB [uas2]> "
+  - delay: 5082
+    content: ^D
+  - delay: 25
+    content: "\e(B\e[0;1mBye\r\n\e(B\e[m\e[?2004h\e]0;root@nicky-X441BA: /home/nicky\aroot@nicky-X441BA:/home/nicky# "
+  - delay: 2367
+    content: "\e[?2004l\r\r\nlogout\r\n"
